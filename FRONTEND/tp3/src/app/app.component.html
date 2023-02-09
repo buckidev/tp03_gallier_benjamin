@@ -1,0 +1,7 @@
+<app-tetiere></app-tetiere>
+<app-formulaire
+  [data]="this.data"
+  (callback)="this.onValidate($event)"
+></app-formulaire>
+<app-recap [data]="this.submittedFormData"></app-recap>
+<app-footer></app-footer>

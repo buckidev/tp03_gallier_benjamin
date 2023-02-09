@@ -1,0 +1,105 @@
+<div class="container">
+  <h3>Formulaire</h3>
+  <div class="content">
+    <label for="lastname">Nom</label>
+    <input
+      type="text"
+      id="lastname"
+      [value]="this.data?.lastname ?? ''"
+      (change)="onInput('lastname', getValue($event))"
+    />
+  </div>
+  <div class="content">
+    <label for="firstname">Prénom</label>
+    <input
+      type="text"
+      id="firstname"
+      [value]="this.data?.firstname ?? ''"
+      (change)="onInput('firstname', getValue($event))"
+    />
+  </div>
+  <div class="content">
+    <label for="gender">Civilité</label>
+    <input
+      type="text"
+      id="gender"
+      [value]="this.data?.gender ?? ''"
+      (change)="onInput('gender', getValue($event))"
+    />
+  </div>
+  <div class="content">
+    <label for="address">Adresse</label>
+    <input
+      type="text"
+      id="address"
+      [value]="this.data?.address ?? ''"
+      (change)="onInput('address', getValue($event))"
+    />
+  </div>
+  <div class="content">
+    <label for="postal_code">Code postal</label>
+    <input
+      type="text"
+      id="postal_code"
+      [value]="this.data?.postal_code ?? ''"
+      (change)="onInput('postal_code', getValue($event))"
+    />
+  </div>
+  <div class="content">
+    <label for="city">Ville</label>
+    <input
+      type="text"
+      id="city"
+      [value]="this.data?.city ?? ''"
+      (change)="onInput('city', getValue($event))"
+    />
+  </div>
+  <div class="content">
+    <label for="country">Pays</label>
+    <input
+      type="text"
+      id="country"
+      [value]="this.data?.country ?? ''"
+      (change)="onInput('country', getValue($event))"
+    />
+  </div>
+  <div class="content">
+    <label for="phone">Téléphone</label>
+    <input
+      type="text"
+      id="phone"
+      [value]="this.data?.phone ?? ''"
+      (change)="onInput('phone', getValue($event))"
+    />
+  </div>
+  <div class="content">
+    <label for="email">Adresse mail</label>
+    <input
+      type="text"
+      id="email"
+      [value]="this.data?.email ?? ''"
+      (change)="onInput('email', getValue($event))"
+    />
+  </div>
+
+  <div class="content">
+    <label for="login">Identifiant</label>
+    <input
+      type="text"
+      id="login"
+      [value]="this.data?.login ?? ''"
+      (change)="onInput('login', getValue($event))"
+    />
+  </div>
+  <div class="content">
+    <label for="password">Mot de passe</label>
+    <input
+      type="password"
+      id="password"
+      [value]="this.data?.password ?? ''"
+      (change)="onInput('password', getValue($event))"
+    />
+  </div>
+
+  <button (click)="this.onClickValidate()">Valider</button>
+</div>
